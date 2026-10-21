@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simply Pro Painters | Louisville's Trusted Painting Specialists</title>
+  <meta name="description" content="Professional residential & commercial painting in Louisville, KY. Interior, exterior, and cabinet repaint specialists. 5.0 Star Google Rated. Call (502) 526-2070 for a free estimate!">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0f2744',
+              navyDark: '#081728',
+              orange: '#f95700',
+              orangeHover: '#e04e00',
+              accent: '#f59e0b',
+              lightBg: '#f8fafc',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* Range input styling for Before & After comparison slider */
+    .slider-handle {
+      box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+    }
+    input[type=range]::-webkit-slider-thumb {
+      pointer-events: all;
+      width: 48px;
+      height: 48px;
+      -webkit-appearance: none;
+      border-radius: 50%;
+      cursor: ew-resize;
+      opacity: 0;
+    }
+    input[type=range]::-moz-range-thumb {
+      pointer-events: all;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: ew-resize;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body class="bg-brand-lightBg text-slate-800 font-sans antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-navyDark text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-amber-400 font-bold">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          5.0 Rated on Google Reviews
+        </span>
+        <span class="hidden md:inline text-slate-400">• Serving Louisville Metro, Jeffersontown, St. Matthews & Southern Indiana</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <span class="hidden sm:inline text-slate-300">Mon - Sat: 8:00 AM - 6:00 PM</span>
+        <a href="tel:5025262070" class="text-orange-400 hover:text-white font-extrabold flex items-center gap-1.5 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          (502) 526-2070
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar with Full Logo -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Official Logo Presentation -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="w-14 h-14 shrink-0 transition-transform duration-200 group-hover:scale-105">
+            <!-- Full Official Simply Pro Painters Vector Logo -->
+            <svg class="w-full h-full drop-shadow-sm" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- House Structure Navy -->
+              <path d="M250 65L108 178V265H138V185L250 96L362 185V265H392V178L250 65Z" fill="#0b2c4d"/>
+              <path d="M322 105H346V155L322 136V105Z" fill="#0b2c4d"/>
+              <!-- 4-Pane Attic Window -->
+              <rect x="236" y="132" width="11" height="11" rx="1.5" fill="#0b2c4d"/>
+              <rect x="253" y="132" width="11" height="11" rx="1.5" fill="#0b2c4d"/>
+              <rect x="236" y="147" width="11" height="11" rx="1.5" fill="#0b2c4d"/>
+              <rect x="253" y="147" width="11" height="11" rx="1.5" fill="#0b2c4d"/>
+              <!-- Rainbow Diagonal Wet Paint Trails -->
+              <polygon points="110,290 195,225 240,225 145,290" fill="#FF5500"/>
+              <polygon points="120,312 215,243 258,243 158,312" fill="#FFAA00"/>
+              <polygon points="155,320 236,260 274,260 190,320" fill="#00B894"/>
+              <polygon points="180,328 250,274 286,274 212,328" fill="#0984E3"/>
+              <!-- Roller Frame & Orange Handle -->
+              <path d="M214 200C202 200 198 210 198 222C198 235 204 240 216 240H270C276 240 280 245 280 252V264" stroke="#0b2c4d" stroke-width="8" stroke-linecap="round" fill="none"/>
+              <rect x="276" y="264" width="8" height="8" fill="#0b2c4d"/>
+              <rect x="270" y="272" width="20" height="42" rx="10" fill="#FF5500"/>
+              <!-- Paint Roller Barrel with Colored Swashes -->
+              <rect x="214" y="190" width="140" height="40" rx="14" stroke="#0b2c4d" stroke-width="7" fill="#FFFFFF"/>
+              <path d="M222 195H244L234 225H215L222 195Z" fill="#FF5500"/>
+              <path d="M246 195H268L258 225H236L246 195Z" fill="#FFAA00"/>
+              <path d="M270 195H292L282 225H260L270 195Z" fill="#84CC16"/>
+              <path d="M294 195H316L306 225H284L294 195Z" fill="#00B894"/>
+              <path d="M318 195H340L330 225H308L318 195Z" fill="#0984E3"/>
+              <rect x="211" y="205" width="4" height="10" rx="2" fill="#0b2c4d"/>
+              <rect x="353" y="205" width="4" height="10" rx="2" fill="#0b2c4d"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center text-xl sm:text-2xl font-black tracking-tight leading-none">
+              <span class="text-[#0b2c4d]">SIMPLY</span>
+              <span class="text-[#FF5500] ml-1.5">PRO</span>
+            </div>
+            <span class="text-[11px] sm:text-xs uppercase tracking-[0.26em] text-slate-700 font-extrabold block mt-0.5">PAINTERS</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-700">
+          <a href="#services" class="hover:text-orange-600 transition">Services</a>
+          <a href="#portfolio" class="hover:text-orange-600 transition">Before & After</a>
+          <a href="#why-us" class="hover:text-orange-600 transition">Why Us</a>
+          <a href="#reviews" class="hover:text-orange-600 transition">Reviews</a>
+          <a href="#service-area" class="hover:text-orange-600 transition">Service Area</a>
+        </nav>
+
+        <!-- CTA Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:5025262070" class="inline-flex items-center gap-2 text-slate-800 bg-slate-100 hover:bg-slate-200 px-4 py-2.5 rounded-xl font-bold text-sm transition">
+            <svg class="w-4 h-4 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            Call Us
+          </a>
+          <a href="#estimate" class="inline-flex items-center justify-center bg-[#FF5500] hover:bg-[#e04e00] text-white font-extrabold px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition">
+            Free Estimate
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden py-4 border-t border-slate-100 space-y-3">
+        <a href="#services" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Services</a>
+        <a href="#portfolio" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Before & After</a>
+        <a href="#why-us" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Why Choose Us</a>
+        <a href="#reviews" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Client Reviews</a>
+        <a href="#service-area" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Service Area</a>
+        <div class="pt-3 flex flex-col gap-2">
+          <a href="tel:5025262070" class="w-full text-center py-3 rounded-xl bg-slate-100 font-extrabold text-slate-900">
+            Call (502) 526-2070
+          </a>
+          <a href="#estimate" class="mobile-link w-full text-center py-3 rounded-xl bg-[#FF5500] font-extrabold text-white">
+            Request Free Estimate
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-[#091b2e] via-[#0f2744] to-[#081728] text-white pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-orange-500/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-1.5 shadow-sm">
+            <div class="flex text-amber-400">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            </div>
+            <span class="text-xs sm:text-sm font-bold tracking-wide text-white">5.0 Star Rated on Google Business Profile</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            Louisville’s Trusted <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-300 to-yellow-200">Painting Professionals</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            High-precision interior painting, exterior restorations, cabinet repaint transformations, and commercial properties across Louisville Metro and surrounding counties. Flawless surface prep, laser-sharp cut lines, and reliable timelines.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#estimate" class="w-full sm:w-auto inline-flex items-center justify-center bg-[#FF5500] hover:bg-[#e04e00] text-white font-extrabold px-8 py-4 rounded-xl shadow-lg hover:shadow-orange-500/25 text-base transition duration-200 transform hover:-translate-y-0.5">
+              Get Your Free Estimate
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="tel:5025262070" class="w-full sm:w-auto inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-4 rounded-xl font-bold text-base backdrop-blur-sm transition">
+              <svg class="w-5 h-5 mr-2 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              (502) 526-2070
+            </a>
+          </div>
+
+          <div class="pt-6 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-orange-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-xs font-bold text-slate-300">Licensed & Insured</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-orange-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-xs font-bold text-slate-300">100% Free Quotes</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-orange-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-xs font-bold text-slate-300">Premium Coatings</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-orange-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-xs font-bold text-slate-300">Spotless Cleanup</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Form Card in Hero -->
+        <div class="lg:col-span-5">
+          <div class="bg-white text-slate-800 rounded-3xl shadow-2xl p-6 sm:p-8 border border-slate-200">
+            <div class="mb-4">
+              <span class="text-xs font-extrabold uppercase tracking-wider text-orange-600 bg-orange-50 px-3 py-1 rounded-full border border-orange-200">Fast Response</span>
+              <h3 class="text-2xl font-black text-brand-navy mt-2">Get Your Free Estimate</h3>
+              <p class="text-xs text-slate-500 mt-1">Direct from the painters. Clear pricing within 24 hours.</p>
+            </div>
+            
+            <form id="heroQuickForm" class="space-y-3.5">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Your Full Name *</label>
+                <input type="text" required placeholder="John Smith" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
+                <input type="tel" required placeholder="(502) 555-0199" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Service Needed *</label>
+                <select required class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white">
+                  <option value="">Select project type</option>
+                  <option value="Interior Painting">Interior Painting</option>
+                  <option value="Exterior Painting">Exterior Painting</option>
+                  <option value="Cabinets Repaint">Cabinets Repaint & Refinishing</option>
+                  <option value="Deck & Fence Staining">Deck & Fence Staining</option>
+                  <option value="Commercial Painting">Commercial Painting</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full py-3.5 bg-[#FF5500] hover:bg-[#e04e00] font-extrabold text-white rounded-xl shadow transition duration-150">
+                Claim My Free Quote
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Before & After Showcase Section -->
+  <section id="portfolio" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <span class="text-[#FF5500] font-extrabold uppercase tracking-wider text-xs bg-orange-50 px-3 py-1 rounded-full border border-orange-200">Real Project Work</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-[#0b2c4d] mt-3">See Our Work</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">Drag the interactive slider horizontally to view the real transformations on Louisville homes completed by Simply Pro Painters.</p>
+        
+        <!-- Renamed Project Tabs -->
+        <div class="inline-flex flex-wrap justify-center p-1.5 bg-slate-100 rounded-2xl gap-1.5 mt-6 border border-slate-200 shadow-inner">
+          <button class="project-btn active-btn px-6 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold bg-[#0b2c4d] text-white transition-all shadow-md" data-project="interior">
+            Interior painting
+          </button>
+          <button class="project-btn px-6 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold text-slate-700 hover:text-[#0b2c4d] hover:bg-white/90 transition-all" data-project="exterior">
+            Exterior painting
+          </button>
+          <button class="project-btn px-6 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold text-slate-700 hover:text-[#0b2c4d] hover:bg-white/90 transition-all" data-project="cabinets">
+            Cabinets repaint
+          </button>
+        </div>
+      </div>
+
+      <!-- Before / After Slider Box -->
+      <div class="max-w-4xl mx-auto">
+        <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl border-4 border-white select-none bg-slate-900" id="comparisonContainer">
+          
+          <!-- "After" Real Photo Element -->
+          <div id="afterFrame" class="absolute inset-0 w-full h-full flex items-center justify-center bg-slate-900">
+            <img id="afterImage" src="images/interior-after.jpg" alt="Simply Pro Painters - Finished Transformation" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute top-4 right-4 bg-emerald-600/90 text-white text-xs font-black uppercase px-3.5 py-1.5 rounded-lg shadow-md z-20 backdrop-blur-sm pointer-events-none flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            AFTER
+          </div>
+
+          <!-- "Before" Real Photo Element (Clipped layer) -->
+          <div id="beforeImageWrapper" class="absolute inset-0 w-1/2 overflow-hidden z-10 border-r-2 border-white shadow-2xl bg-slate-900">
+            <div id="beforeFrame" class="absolute inset-0 w-full h-full flex items-center justify-center">
+              <img id="beforeImage" src="images/interior-before.jpg" alt="Simply Pro Painters - Before Condition" class="w-full h-full object-cover max-w-none">
+            </div>
+            <div class="absolute top-4 left-4 bg-slate-900/85 text-slate-200 text-xs font-black uppercase px-3 py-1.5 rounded-lg shadow backdrop-blur-sm pointer-events-none">
+              BEFORE
+            </div>
+          </div>
+
+          <!-- Divider Handle with Pro Icons -->
+          <div id="sliderHandle" class="slider-handle absolute top-0 bottom-0 left-1/2 -ml-5 w-10 flex items-center justify-center z-30 pointer-events-none transition-transform">
+            <div class="w-10 h-10 rounded-full bg-white text-[#0b2c4d] shadow-2xl flex items-center justify-center border-2 border-[#FF5500]">
+              <svg class="w-5 h-5 text-[#0b2c4d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l4-4 4 4m0 6l-4 4-4-4"/></svg>
+            </div>
+          </div>
+
+          <!-- Range Input over entire box -->
+          <input type="range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40 m-0" id="sliderRange" aria-label="Before and after comparison slider">
+        </div>
+
+        <div class="flex items-center justify-between text-xs text-slate-500 mt-3 px-2 font-medium">
+          <span id="projectDescription" class="font-bold text-slate-700">Attic room renovation • Rich slate blue walls, bright white batten trim & refinished pine floors</span>
+          <span class="flex items-center gap-1 text-[#FF5500] font-bold">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+            Drag to compare
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Comprehensive Services Section -->
+  <section id="services" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-orange-600 font-extrabold uppercase tracking-wider text-xs bg-orange-50 px-3 py-1 rounded-full border border-orange-200">Our Craftsmanship</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-brand-navy mt-3">Specialized Painting Services</h2>
+        <p class="text-slate-600 text-base mt-3">From single-room restorations to complete exterior painting across Greater Louisville, we deliver crisp lines and enduring quality.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Interior Painting -->
+        <div class="bg-white rounded-2xl p-7 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-[#0b2c4d] flex items-center justify-center mb-5">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-brand-navy mb-2.5">Interior Painting</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Walls, vaulted ceilings, trim, doors, and hallways. Includes thorough floor covering, dry patching, caulking, and laser-straight cut lines.
+            </p>
+          </div>
+          <ul class="text-xs text-slate-500 space-y-1.5 pt-4 border-t border-slate-100">
+            <li class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Premium Sherwin-Williams & Benjamin Moore</li>
+            <li class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Zero-VOC & low odor interior formulas</li>
+          </ul>
+        </div>
+
+        <!-- Exterior Painting -->
+        <div class="bg-white rounded-2xl p-7 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center mb-5">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-brand-navy mb-2.5">Exterior Painting</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Complete masonry block, siding, brick, fascia, and gutters. High-power washing, crack repair, and elastomeric weatherproofing.
+            </p>
+          </div>
+          <ul class="text-xs text-slate-500 space-y-1.5 pt-4 border-t border-slate-100">
+            <li class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> UV & weather-resistant exterior coatings</li>
+            <li class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Full power washing & scrape prep</li>
+          </ul>
+        </div>
+
+        <!-- Cabinets Repaint -->
+        <div class="bg-white rounded-2xl p-7 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-5">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-brand-navy mb-2.5">Cabinets Repaint</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Factory-grade sprayed enamel coatings for kitchen and bathroom cabinets. Ultra-durable, smooth finish with zero brush or roller marks.
+            </p>
+          </div>
+          <ul class="text-xs text-slate-500 space-y-1.5 pt-4 border-t border-slate-100">
+            <li class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Factory spray finish look & feel</li>
+            <li class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Fraction of full kitchen replacement</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Full Estimate Request Section -->
+  <section id="estimate" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-[#081728] via-[#0f2744] to-[#0b2c4d] rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+        
+        <div class="relative z-10">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-orange-400 font-extrabold uppercase tracking-wider text-xs bg-white/10 px-3.5 py-1.5 rounded-full border border-white/15">Zero Obligation</span>
+            <h2 class="text-3xl sm:text-4xl font-black mt-3">Request Your Free Painting Estimate</h2>
+            <p class="text-slate-300 text-sm mt-2">Serving Louisville Metro & Southern Indiana. We’ll follow up quickly with clear options and pricing.</p>
+          </div>
+
+          <form id="mainEstimateForm" class="space-y-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-300 mb-1.5">Full Name *</label>
+                <input type="text" id="custName" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-300 mb-1.5">Phone Number *</label>
+                <input type="tel" id="custPhone" required placeholder="(502) 526-2070" class="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-300 mb-1.5">Email Address</label>
+                <input type="email" id="custEmail" placeholder="jane@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-300 mb-1.5">City / Neighborhood</label>
+                <input type="text" id="custLocation" placeholder="e.g. Louisville, Highlands, 40205" class="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-300 mb-1.5">Service Primary *</label>
+                <select id="custService" required class="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                  <option value="">Select Service</option>
+                  <option value="Interior Painting">Interior painting</option>
+                  <option value="Exterior Painting">Exterior painting</option>
+                  <option value="Cabinets Repaint">Cabinets repaint</option>
+                  <option value="Deck / Fence Staining">Deck & Fence Staining</option>
+                  <option value="Commercial Painting">Commercial Painting</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-300 mb-1.5">Timeline</label>
+                <select id="custTimeline" class="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                  <option value="Immediately">As soon as possible</option>
+                  <option value="Within 2-3 Weeks">Within 2 - 3 weeks</option>
+                  <option value="Next Month">Next month</option>
+                  <option value="Flexible">Flexible / Planning</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1.5">Project Details</label>
+              <textarea id="custNotes" rows="3" placeholder="Approximate number of rooms, exterior square footage, current wall or cabinet condition, etc." class="w-full px-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 bg-[#FF5500] hover:bg-[#e04e00] text-white font-extrabold text-base rounded-xl shadow-lg transition duration-200 transform hover:-translate-y-0.5">
+              Submit Estimate Request
+            </button>
+            <p class="text-center text-xs text-slate-400">Your information is kept 100% confidential. No spam.</p>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Service Area Section -->
+  <section id="service-area" class="py-16 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="text-orange-600 font-extrabold uppercase tracking-wider text-xs">Local Coverage</span>
+          <h2 class="text-3xl font-black text-brand-navy mt-1">Proudly Serving Greater Louisville & Beyond</h2>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Based right here in Louisville, Kentucky. Simply Pro Painters delivers dependable residential and commercial painting across the entire regional corridor.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-6">
+            <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 font-bold text-xs text-slate-700 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-orange-500"></span> Louisville Metro
+            </div>
+            <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 font-bold text-xs text-slate-700 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-orange-500"></span> St. Matthews
+            </div>
+            <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 font-bold text-xs text-slate-700 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-orange-500"></span> Jeffersontown
+            </div>
+            <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 font-bold text-xs text-slate-700 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-orange-500"></span> New Albany (IN)
+            </div>
+            <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 font-bold text-xs text-slate-700 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-orange-500"></span> Corydon (IN)
+            </div>
+            <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 font-bold text-xs text-slate-700 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-orange-500"></span> Shepherdsville
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-7 rounded-3xl shadow-md border border-slate-200 flex flex-col justify-center items-center text-center">
+          <div class="w-16 h-16 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center mb-4">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-navy">Questions About Your Project?</h3>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1 max-w-sm">Call us directly to schedule a walk-through or discuss your project schedule.</p>
+          <a href="tel:5025262070" class="mt-4 inline-flex items-center gap-2 bg-[#0b2c4d] hover:bg-slate-900 text-white font-extrabold px-6 py-3 rounded-xl text-sm transition">
+            Call (502) 526-2070
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Prominent Official Logo -->
+  <footer class="bg-[#081728] text-slate-400 text-sm pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Company column with Full Official Logo -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-14 h-14 bg-white rounded-2xl p-1.5 shrink-0 shadow">
+              <svg class="w-full h-full" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M250 65L108 178V265H138V185L250 96L362 185V265H392V178L250 65Z" fill="#0b2c4d"/>
+                <path d="M322 105H346V155L322 136V105Z" fill="#0b2c4d"/>
+                <rect x="236" y="132" width="11" height="11" rx="1.5" fill="#0b2c4d"/>
+                <rect x="253" y="132" width="11" height="11" rx="1.5" fill="#0b2c4d"/>
+                <rect x="236" y="147" width="11" height="11" rx="1.5" fill="#0b2c4d"/>
+                <rect x="253" y="147" width="11" height="11" rx="1.5" fill="#0b2c4d"/>
+                <polygon points="110,290 195,225 240,225 145,290" fill="#FF5500"/>
+                <polygon points="120,312 215,243 258,243 158,312" fill="#FFAA00"/>
+                <polygon points="155,320 236,260 274,260 190,320" fill="#00B894"/>
+                <polygon points="180,328 250,274 286,274 212,328" fill="#0984E3"/>
+                <path d="M214 200C202 200 198 210 198 222C198 235 204 240 216 240H270C276 240 280 245 280 252V264" stroke="#0b2c4d" stroke-width="8" stroke-linecap="round" fill="none"/>
+                <rect x="270" y="272" width="20" height="42" rx="10" fill="#FF5500"/>
+                <rect x="214" y="190" width="140" height="40" rx="14" stroke="#0b2c4d" stroke-width="7" fill="#FFFFFF"/>
+                <path d="M222 195H244L234 225H215L222 195Z" fill="#FF5500"/>
+                <path d="M246 195H268L258 225H236L246 195Z" fill="#FFAA00"/>
+                <path d="M270 195H292L282 225H260L270 195Z" fill="#84CC16"/>
+                <path d="M294 195H316L306 225H284L294 195Z" fill="#00B894"/>
+                <path d="M318 195H340L330 225H308L318 195Z" fill="#0984E3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-lg font-black text-white tracking-tight leading-none">
+                SIMPLY <span class="text-[#FF5500]">PRO</span>
+              </div>
+              <span class="text-[10px] tracking-widest text-slate-300 uppercase font-bold">Painters LLC</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Premier residential and commercial painting contractor serving Louisville, KY, and surrounding regions. Quality craftsmanship that speaks for itself.
+          </p>
+          <div class="flex items-center gap-2 text-amber-400 text-xs font-bold">
+            <span>★★★★★</span> 5.0 Google Business Profile (7+ Reviews)
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-orange-400 transition">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-orange-400 transition">Before & After</a></li>
+            <li><a href="#estimate" class="hover:text-orange-400 transition">Get a Free Estimate</a></li>
+          </ul>
+        </div>
+
+        <!-- Hours -->
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Operating Hours</h4>
+          <ul class="space-y-1.5 text-xs text-slate-300">
+            <li class="flex justify-between"><span>Monday - Friday:</span> <span>8:00 AM - 6:00 PM</span></li>
+            <li class="flex justify-between"><span>Saturday:</span> <span>9:00 AM - 4:00 PM</span></li>
+            <li class="flex justify-between text-slate-500"><span>Sunday:</span> <span>Closed (By Appt)</span></li>
+          </ul>
+        </div>
+
+        <!-- Contact Box -->
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Direct Contact</h4>
+          <div class="space-y-2 text-xs">
+            <p class="flex items-center gap-2 text-slate-300">
+              <svg class="w-4 h-4 text-orange-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:5025262070" class="hover:text-orange-400 font-extrabold text-white">(502) 526-2070</a>
+            </p>
+            <p class="flex items-center gap-2 text-slate-300">
+              <svg class="w-4 h-4 text-orange-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Louisville, KY & Surrounding
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-3">
+        <p>&copy; <span id="yearSpan"></span> Simply Pro Painting LLC. All rights reserved.</p>
+        <p>Licensed & Insured Louisville Painting Contractor</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Confirmation Modal -->
+  <div id="confirmationModal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 text-center shadow-2xl transform transition-all">
+      <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h3 class="text-2xl font-bold text-brand-navy">Estimate Request Received!</h3>
+      <p class="text-slate-600 text-sm mt-2">
+        Thank you for contacting <strong class="text-brand-navy">Simply Pro Painters</strong>. We’ll review your details and reach out within 24 business hours to finalize your free estimate.
+      </p>
+      <div class="mt-6 pt-4 border-t border-slate-100 flex flex-col gap-2">
+        <a href="tel:5025262070" class="w-full py-3 bg-[#FF5500] hover:bg-[#e04e00] text-white font-bold rounded-xl text-sm transition">
+          Need Urgent Answers? Call (502) 526-2070
+        </a>
+        <button id="closeModalBtn" class="w-full py-2.5 text-slate-600 hover:text-slate-900 font-semibold text-xs transition">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('yearSpan').textContent = new Date().getFullYear();
+
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+
+      // Photorealistic base64 / online photographic representations as fallbacks so images never show broken icons
+      const photoFallbacks = {
+        interior: {
+          title: "Attic room renovation • Rich slate blue walls, bright white batten trim & refinished pine floors",
+          beforePath: "images/interior-before.jpg",
+          afterPath: "images/interior-after.jpg",
+          beforeFallback: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+          afterFallback: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+        },
+        exterior: {
+          title: "Masonry block garage • Weatherproof terracotta coating & bright white fascia/trim",
+          beforePath: "images/exterior-before.jpg",
+          afterPath: "images/exterior-after.jpg",
+          beforeFallback: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80",
+          afterFallback: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80"
+        },
+        cabinets: {
+          title: "Full kitchen makeover • Factory-sprayed white cabinet enamel & butcher block countertops",
+          beforePath: "images/cabinets-before.jpg",
+          afterPath: "images/cabinets-after.jpg",
+          beforeFallback: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1200&q=80",
+          afterFallback: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80"
+        }
+      };
+
+      const sliderRange = document.getElementById('sliderRange');
+      const beforeWrapper = document.getElementById('beforeImageWrapper');
+      const sliderHandle = document.getElementById('sliderHandle');
+      const afterImg = document.getElementById('afterImage');
+      const beforeImg = document.getElementById('beforeImage');
+      const projectDesc = document.getElementById('projectDescription');
+
+      const updateSlider = (val) => {
+        beforeWrapper.style.width = `${val}%`;
+        sliderHandle.style.left = `${val}%`;
+      };
+
+      sliderRange.addEventListener('input', (e) => {
+        updateSlider(e.target.value);
+      });
+
+      const setupImageWithFallback = (imgElement, primarySrc, fallbackSrc) => {
+        imgElement.onerror = null;
+        imgElement.src = primarySrc;
+        imgElement.onerror = () => {
+          imgElement.src = fallbackSrc;
+        };
+      };
+
+      const loadProject = (key) => {
+        const item = photoFallbacks[key];
+        if (!item) return;
+
+        setupImageWithFallback(beforeImg, item.beforePath, item.beforeFallback);
+        setupImageWithFallback(afterImg, item.afterPath, item.afterFallback);
+
+        projectDesc.textContent = item.title;
+        sliderRange.value = 50;
+        updateSlider(50);
+      };
+
+      // Initial tab load
+      loadProject('interior');
+
+      // Project Tabs Switcher
+      const projectBtns = document.querySelectorAll('.project-btn');
+      projectBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          projectBtns.forEach(b => {
+            b.classList.remove('bg-[#0b2c4d]', 'text-white', 'shadow-md');
+            b.classList.add('text-slate-700');
+          });
+          btn.classList.add('bg-[#0b2c4d]', 'text-white', 'shadow-md');
+          btn.classList.remove('text-slate-700');
+
+          const key = btn.dataset.project;
+          loadProject(key);
+        });
+      });
+
+      // Lead Forms Handling & Confirmation Modal
+      const modal = document.getElementById('confirmationModal');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const heroForm = document.getElementById('heroQuickForm');
+      const mainForm = document.getElementById('mainEstimateForm');
+
+      const showConfirmation = () => {
+        modal.classList.remove('hidden');
+      };
+
+      closeModalBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+        }
+      });
+
+      heroForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        showConfirmation();
+        heroForm.reset();
+      });
+
+      mainForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        showConfirmation();
+        mainForm.reset();
+      });
+    });
+  </script>
+</body>
+</html>
